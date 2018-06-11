@@ -67,6 +67,10 @@ set showcmd
 " Start scrolling three lines before the horizontal window border
 set scrolloff=3
 
+" Force input source to U.S.
+nnoremap <esc> :silent exec "!bash ~/bin/force-us-keyboard.sh"<cr>
+inoremap <esc> <esc>:silent exec "!bash ~/bin/force-us-keyboard.sh"<cr>
+
 
 " ========================================
 " Plugs
@@ -104,6 +108,9 @@ Plug 'vim-scripts/grep.vim'
 " Per-project configs
 Plug 'LucHermitte/lh-vim-lib'
 Plug 'LucHermitte/local_vimrc'
+
+" Asynchronously execute command/etc.
+Plug 'tpope/vim-dispatch'
 
 " Multiple language in one file
 Plug 'Shougo/context_filetype.vim'
