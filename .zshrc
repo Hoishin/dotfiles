@@ -35,15 +35,6 @@ for file in ~/.{path,exports,aliases,functions,extra}; do
 done;
 unset file;
 
-# alias
-alias v="nvim"
-alias vi="nvim"
-alias vim="nvim"
-alias v.="nvim ."
-alias vi.="nvim ."
-alias vim.="nvim ."
-alias nvim.="nvim ."
-
 # https://github.com/sindresorhus/pure
 autoload -U promptinit; promptinit
 prompt pure
