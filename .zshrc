@@ -16,7 +16,7 @@ export PATH="$HOME/bin:$PATH";
 # Load the shell dotfiles, and then some:
 # * ~/.path can be used to extend `$PATH`.
 # * ~/.extra can be used for other settings you don’t want to commit.
-for file in $(dirname $0)/.zsh_source/.{path,exports,aliases,functions,extra,zsh_prompt}; do
+for file in ~/.zsh_source/.{path,exports,aliases,functions,extra,zsh_prompt}; do
 	[ -r "$file" ] && [ -f "$file" ] && source "$file";
 done;
 unset file;
