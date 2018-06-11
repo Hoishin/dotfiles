@@ -35,10 +35,6 @@ for file in ~/.{path,exports,aliases,functions,extra}; do
 done;
 unset file;
 
-# https://github.com/sindresorhus/pure
-autoload -U promptinit; promptinit
-prompt pure
-
 # pyenv
 eval "$(pyenv init -)"
 export PYENV_ROOT="${HOME}/.pyenv"
