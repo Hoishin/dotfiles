@@ -67,9 +67,17 @@ set showcmd
 " Start scrolling three lines before the horizontal window border
 set scrolloff=3
 
+
+" ========================================
+" Keybinds
+" ========================================
+
 " Force input source to U.S.
 nnoremap <esc> :silent exec "!bash ~/bin/force-us-keyboard.sh"<cr>
 inoremap <esc> <esc>:silent exec "!bash ~/bin/force-us-keyboard.sh"<cr>
+
+" Save on double ESC
+nnoremap <esc><esc> :wa<cr>
 
 
 " ========================================
