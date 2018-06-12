@@ -30,6 +30,7 @@ set directory=~/.vim/swaps
 if exists("&undodir")
 	set undodir=~/.vim/undo
 endif
+
 " Don’t create backups when editing files in certain directories
 set backupskip=/tmp/*,/private/tmp/*
 
@@ -40,7 +41,7 @@ set number
 syntax on
 
 " Highlight current line
-set cursorline
+"set cursorline
 
 " Show “invisible” characters
 set lcs=tab:▸\ ,trail:·,eol:¬,nbsp:_
