@@ -77,7 +77,7 @@ nnoremap <esc> :silent exec "!bash ~/bin/force-us-keyboard.sh"<cr>
 inoremap <esc> <esc>:silent exec "!bash ~/bin/force-us-keyboard.sh"<cr>
 
 " Save on double ESC
-nnoremap <esc><esc> :wa<cr>
+nnoremap <esc><esc> :noh<cr>:wa<cr>
 
 
 " ========================================
