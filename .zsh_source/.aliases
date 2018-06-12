@@ -4,13 +4,8 @@
 # vim
 #============================================================
 
-alias v="nvim"
 alias vi="nvim"
 alias vim="nvim"
-alias v.="nvim ."
-alias vi.="nvim ."
-alias vim.="nvim ."
-alias nvim.="nvim ."
 
 
 #============================================================
