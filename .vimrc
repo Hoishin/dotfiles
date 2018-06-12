@@ -73,12 +73,12 @@ set scrolloff=3
 " Keybinds
 " ========================================
 
-" Force input source to U.S.
-nnoremap <esc> :silent exec "!bash ~/bin/force-us-keyboard.sh"<cr>
-inoremap <esc> <esc>:silent exec "!bash ~/bin/force-us-keyboard.sh"<cr>
+" When ESC is pressed, save and force input source to U.S.
+nnoremap <esc> :wa<cr>:silent exec "!bash ~/bin/force-us-keyboard.sh"<cr>
+inoremap <esc> <esc>:wa<cr>:silent exec "!bash ~/bin/force-us-keyboard.sh"<cr>
 
-" Save on double ESC
-nnoremap <esc><esc> :noh<cr>:wa<cr>
+" Duplicate ESC removes highlight
+nnoremap <esc><esc> :noh<cr>
 
 
 " ========================================
