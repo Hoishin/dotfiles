@@ -1,4 +1,4 @@
-# Added by zsh initialization
+# zsh completion
 zstyle ':completion:*' completer _expand _complete _ignored _correct _approximate
 zstyle ':completion:*' group-name ''
 zstyle ':completion:*' matcher-list '' '+m:{[:lower:]}={[:upper:]} m:{[:lower:][:upper:]}={[:upper:][:lower:]} r:|[._-]=* r:|=*' '+l:|=* r:|=*' '+'
@@ -6,8 +6,12 @@ zstyle ':completion:*' use-compctl false
 zstyle :compinstall filename '/Users/kei/.zshrc'
 autoload -Uz compinit
 compinit
+
+# man zshoptions
 setopt appendhistory extendedglob nomatch
 unsetopt autocd beep notify
+
+# vim style keybinds
 bindkey -v
 
 # Add `~/bin` to the `$PATH`
