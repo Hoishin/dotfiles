@@ -235,7 +235,7 @@ let $FZF_DEFAULT_COMMAND = 'fd --hidden --type f --exclude .git'
 :nnoremap <Leader>p :Files<CR>
 
 " FZF on buffers
-:nnoremap <Leader>g :Buffers<CR>
+:nnoremap <Leader>b :Buffers<CR>
 
 " Grep
 :nnoremap <Leader>g :Rgrep<CR>
