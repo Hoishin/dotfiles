@@ -73,13 +73,6 @@ set scrolloff=3
 " Keybinds
 " ========================================
 
-" When ESC is pressed, save and force input source to U.S.
-nnoremap <esc> :wa<cr>:silent exec "!bash ~/bin/force-us-keyboard.sh"<cr>
-inoremap <esc> <esc>:wa<cr>:silent exec "!bash ~/bin/force-us-keyboard.sh"<cr>
-
-" Duplicate ESC removes highlight
-nnoremap <esc><esc> :noh<cr>
-
 
 " ========================================
 " Plugs
@@ -181,6 +174,10 @@ call plug#end()
 " Plugin config
 " ========================================
 
+" Dracula theme
+syntax on
+color dracula
+
 " NERDTree
 let NERDTreeShowHidden=1
 
@@ -236,6 +233,9 @@ let $FZF_DEFAULT_COMMAND = 'fd --hidden --type f --exclude .git'
 
 " FZF
 :nnoremap <Leader>p :Files<CR>
+
+" FZF on buffers
+:nnoremap <Leader>g :Buffers<CR>
 
 " Grep
 :nnoremap <Leader>g :Rgrep<CR>
