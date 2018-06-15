@@ -25,14 +25,14 @@ set wildmenu
 set encoding=utf-8 nobomb
 
 " Centralize backups, swapfiles and undo history
-set backupdir=~/.vim/backups
-set directory=~/.vim/swaps
-if exists("&undodir")
-	set undodir=~/.vim/undo
-endif
+" set backupdir=~/.vim/backups
+" set directory=~/.vim/swaps
+" if exists("&undodir")
+" 	set undodir=~/.vim/undo
+" endif
 
 " Don’t create backups when editing files in certain directories
-set backupskip=/tmp/*,/private/tmp/*
+" set backupskip=/tmp/*,/private/tmp/*
 
 " Enable line numbers
 set number
