@@ -37,6 +37,8 @@ brew install \
 	hydra \
 	john \
 	knock \
+	libidn \
+	libmagic \
 	lua \
 	lynx \
 	moreutils \
