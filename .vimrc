@@ -52,6 +52,10 @@ set showcmd
 " Start scrolling three lines before the horizontal window border
 set scrolloff=3
 
+" Automatically read/write files
+set autoread
+set autowriteall
+
 
 " ========================================
 " Keybinds
