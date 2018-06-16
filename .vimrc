@@ -91,7 +91,7 @@ Plug 'itchyny/lightline.vim'
 Plug 'scrooloose/nerdtree'
 
 " Better grep
-Plug 'vim-scripts/grep.vim'
+Plug 'mhinz/vim-grepper', { 'on': ['Grepper', '<plug>(GrepperOperator)'] }
 
 " Per-project configs
 Plug 'LucHermitte/lh-vim-lib'
