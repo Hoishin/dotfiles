@@ -145,6 +145,17 @@ color dracula
 
 " NERDTree
 let NERDTreeShowHidden=1
+au VimEnter * NERDTree
+
+" lightline
+let g:lightline = {
+\	'component_function': {
+\		'filename': 'LightlineFilename',
+\	},
+\}
+function! LightlineFilename()
+	return &filetype ==# 'nerdtree' ? getcwd() : join(split(@%, '/')[-5:-1], '/')
+endfunction
 
 " deoplete
 let g:deoplete#enable_at_startup = 1
@@ -170,9 +181,3 @@ let $FZF_DEFAULT_COMMAND = 'fd --hidden --type f --exclude .git'
 
 " FZF
 nmap <C-p> :Files<CR>
-
-" FZF on buffers
-nmap <C-b> :Buffers<CR>
-
-" Grep
-nmap <C-g> :Rgrep<CR>
