@@ -162,6 +162,15 @@ function v() {
 	fi;
 }
 
+# Same thing as above for Visual Studio Code
+function code() {
+	if [ $# -eq 0 ]; then
+		/usr/local/bin/code .;
+	else
+		/usr/local/bin/code "$@";
+	fi;
+}
+
 # `o` with no arguments opens the current directory, otherwise opens the given
 # location
 function o() {
