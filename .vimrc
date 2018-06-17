@@ -155,7 +155,6 @@ color dracula
 
 " NERDTree
 let NERDTreeShowHidden=1
-au VimEnter * NERDTree
 
 " lightline
 let g:lightline = {
