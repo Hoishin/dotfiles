@@ -163,7 +163,7 @@ let g:lightline = {
 \	},
 \}
 function! LightlineFilename()
-	return &filetype ==# 'nerdtree' ? getcwd() : join(split(@%, '/')[-5:-1], '/')
+	return &filetype ==# 'nerdtree' ? getcwd() : substitute(@%, getcwd(), '', '')
 endfunction
 
 " deoplete
