@@ -8,7 +8,7 @@ autoload -Uz compinit
 compinit
 
 # man zshoptions
-setopt appendhistory extendedglob nomatch
+setopt appendhistory extendedglob nomatch hist_find_no_dups
 unsetopt autocd beep notify
 
 # vim style keybinds
