@@ -40,6 +40,9 @@ export NVM_DIR="$HOME/.nvm"
 # FZF
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
+# Print out NODE_ENV because sometimes it automatically set production before login
+echo "NODE_ENV is '${NODE_ENV}'"
+
 # MUST BE AT THE END
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
