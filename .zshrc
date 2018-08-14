@@ -17,6 +17,9 @@ bindkey -v
 # Add `~/bin` to the `$PATH`
 export PATH="$HOME/bin:$PATH";
 
+# Add brew-related paths
+export PATH="/usr/local/opt/ccache/libexec:$PATH"
+
 # Load the shell dotfiles, and then some:
 # * ~/.path can be used to extend `$PATH`.
 # * ~/.extra can be used for other settings you don’t want to commit.
